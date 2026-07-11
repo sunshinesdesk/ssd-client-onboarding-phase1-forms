@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSD — Client Onboarding Forms</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #000053;
+    --gold: #FFD500;
+    --cream: #FFEFC7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--cream);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .logo em { color: var(--gold); font-style: italic; }
+  .tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,239,199,0.4);
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 900px;
+  }
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,213,0,0.15);
+    border-radius: 12px;
+    padding: 24px;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card:hover {
+    background: rgba(255,213,0,0.06);
+    border-color: rgba(255,213,0,0.4);
+  }
+  .card-type {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--cream);
+  }
+  .card-date {
+    font-size: 12px;
+    color: rgba(255,239,199,0.35);
+    margin-top: 4px;
+  }
+  .card-arrow {
+    font-size: 12px;
+    color: rgba(255,213,0,0.5);
+    margin-top: auto;
+    padding-top: 12px;
+  }
+  .empty {
+    text-align: center;
+    color: rgba(255,239,199,0.3);
+    font-size: 14px;
+    padding: 40px;
+  }
+  footer {
+    margin-top: 56px;
+    font-size: 11px;
+    color: rgba(255,239,199,0.2);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<p class="logo">Sunshine <em>Social Desk</em></p>
+<p class="tagline">Client Onboarding Forms</p>
+
+<div class="card-grid">
+
+  <!-- ── ADD NEW CLIENT FORMS BELOW THIS LINE ── -->
+
+  <a href="saniya-mulchandani.html" class="card">
+    <p class="card-type">Personal Branding</p>
+    <p class="card-name">Saniya Mulchandani</p>
+    <p class="card-date">July 2026</p>
+    <p class="card-arrow">Open form →</p>
+  </a>
+
+  <!-- ── FUTURE CLIENTS GO HERE ── -->
+  <!-- Copy the card block above and paste below for each new client -->
+
+</div>
+
+<footer>SUNSHINE SOCIAL DESK &middot; INTERNAL USE ONLY</footer>
+
+</body>
+</html>
